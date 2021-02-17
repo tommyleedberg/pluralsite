@@ -15,5 +15,7 @@ jobs:
         uses: actions/checkout@v1
       - name: Restore the Dependencies
         run: npm ci
+        working-directory: auto-release-draft
       - name: Build
-        run npm run all
+        run: npm run all
+        working-directory: auto-release-draft
