@@ -12,7 +12,7 @@ jobs:
         os: [windows-latest]
     steps:
       - name: Get the sources
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Restore the Dependencies
         run: npm ci
         working-directory: auto-release-draft
