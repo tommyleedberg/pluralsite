@@ -1,9 +1,0 @@
-name: 'Auto Release Draft'
-description: 'Drafts a GitHub release with changes introduced by a newly created version tag.'
-author: 'Tommy Leedberg'
-outputs:
-  release-url:
-    description: 'The URL of the GitHub release that was drafted'
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
