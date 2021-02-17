@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Create a release Draft for a version tag
         id: create-release-draft
-        uses: ./auto-release-draft
+        uses: ./auto-release-draft/
         with:
           milliseconds: 1000
       - name: Print the URL of the release draft
