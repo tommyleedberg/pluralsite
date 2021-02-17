@@ -12,7 +12,7 @@ jobs:
         os: [windows-latest, ubuntu-latest]
     steps:
       - name: Get the sources
-        uses: actions/acheckout@v1
+        uses: actions/checkout@v1
       - name: Create a release Draft for a version tag
         id: create-release-draft
         uses: ./auto-release-draft

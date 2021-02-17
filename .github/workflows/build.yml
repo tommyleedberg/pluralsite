@@ -1,11 +1,11 @@
-name: build
+name: Build
 on:
   push:
     branches:
       - master
 jobs:
   build:
-    name: Build and Test
+    name: Build
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
