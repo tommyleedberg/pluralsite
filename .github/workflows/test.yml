@@ -16,7 +16,5 @@ jobs:
       - name: Create a release Draft for a version tag
         id: create-release-draft
         uses: ./auto-release-draft
-        with:
-          milliseconds: 10
       - name: Print the URL of the release draft
-        run: echo "${{ steps.create-release-draft.outputs.release-url }}""
+        run: echo ${{ steps.create-release-draft.outputs.release-url }}"
